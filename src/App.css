@@ -1,38 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e5e5e5;
+  font-family: "Poppins", sans-serif;
+}
 .App {
-  text-align: center;
+  background: #ffffff;
+  width: 50%;
+  margin: 50px auto;
+  max-width: 550px;
+  border-radius: 5px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  height: 70px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+}
+.nav--logo {
+  max-width: 100px;
+}
+.infos-section {
+  padding: 20px;
+}
+.infos-section-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.infos-section-img img {
+  width: 100%;
+  max-width: 400px;
+}
+.infos-section-data {
+  max-width: 70%;
+}
+.infos-section-data h2 {
+  font-weight: 600;
+  font-size: 36px;
+}
+.infos-section-data p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 110%;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* card style */
+.card {
+  max-width: 176px;
+  margin: 0 10px;
+}
+.card--img {
+  width: 100%;
+  height: 235px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+.card--img img {
+  width: 100%;
+}
+.card--img__flag {
+  font-size: 10.24px;
+  line-height: 110%;
+  text-align: center;
+  color: #222222;
+  width: 61px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.card--review {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card--review p:first-child {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  color: #222222;
+}
+.card--review p:last-child {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+
+  color: #918e9b;
+}
+.card--review img {
+  width: 14px;
+  height: 14px;
+}
+.card--review p {
 }
 
-.App-link {
-  color: #61dafb;
+.card--text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  color: #222222;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-price span:first-child {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 110%;
+  color: #222222;
+}
+.card-price span:last-child {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 110%;
+  color: #222222;
 }
